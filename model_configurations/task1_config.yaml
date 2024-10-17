@@ -1,0 +1,38 @@
+experiment_name: 'experiment_with_tuning'
+model:
+  layers:
+    units:
+      min: 8
+      max: 32
+      step: 4
+    activation:
+      - 'relu'
+      - 'tanh'
+    dropout:
+      - 0.0
+      - 0.1
+      - 0.2
+  num_layers:
+    min: 3
+    max: 5
+  regularization:
+    l2:
+      - 0.0
+      - 0.001
+      - 0.0001
+optimizer:
+  types:
+    - 'adam'
+    #- 'sgd'
+  learning_rate:
+    min: 0.00001
+    max: 0.01
+
+training:
+  epochs: 200
+  early_stopping_patience: 40
+learning_rate_scheduler:
+  type: 'warmup_cosine_decay'
+  warmup_epochs: 20
+  min_lr: 0.00001
+  alpha: 0.1

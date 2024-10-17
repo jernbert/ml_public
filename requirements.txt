@@ -1,0 +1,32 @@
+# Data Manipulation
+numpy>=1.19.0,<1.25
+pandas>=1.1.0,<2.0
+
+# Data Visualization
+matplotlib>=3.3.0,<4.0
+seaborn>=0.11.0,<1.0
+
+# Utilities
+jupyterlab>=3.0.0,<4.0
+
+# Machine Learning
+scikit-learn>=0.24.0,<2.0
+tensorflow>=2.10.0,<2.18
+keras>=2.10.0,<2.18
+
+# Advanced Features
+umap-learn>=0.5.1,<0.6
+scipy>=1.5.0,<2.0
+
+# Model Visualization
+pydot>=1.4.1
+graphviz>=0.16
+
+# Others
+tensorflow-addons>=0.19.0,<0.25
+keras-tuner>=1.0.4,<1.5.0
+optuna>=3.0.0,<4.0
+pyyaml>=6.0,<7.0
+
+
+
